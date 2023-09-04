@@ -1,7 +1,8 @@
 PluginAPI.require("player");
-PluginAPI.addEventListener("update", ()=>{ //Every client tick
-  if(!PluginAPI.player.isSneaking){ //Is player walking in to a wall?
-    PluginAPI.player.motionY = 0.2; //Default ladder speed
-    PluginAPI.updateComponent("player"); //Tell api that player needs updating
+
+PluginAPI.addEventListener("key", (event) => {
+  if (event.key === 35) { // Key code for 'h'
+    PluginAPI.player.y += 0.5;
+    PluginAPI.updateComponent("player");
   }
 });
