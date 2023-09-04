@@ -2,7 +2,7 @@ PluginAPI.require("player");
 
 PluginAPI.addEventListener("key", (event) => {
   if (event.key === 35) { // Key code for 'h'
-    PluginAPI.player.y += 0.5;
+    PluginAPI.player.y += 5;
     PluginAPI.updateComponent("player");
   }
 });
