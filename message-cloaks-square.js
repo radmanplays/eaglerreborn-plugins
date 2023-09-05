@@ -3,7 +3,7 @@ PluginAPI.addEventListener("sendchatmessage", function (event) {
   var message = event.message;
 
   // Modify the chat message
-  var modifiedMessage = "🔥 " + message + " 🔥";
+  var modifiedMessage = "◽ " + message + " ◾";
 
   // Prevent the default action (cancels sending the packet) if needed
   // event.preventDefault();
