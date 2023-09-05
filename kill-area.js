@@ -1,6 +1,6 @@
 PluginAPI.addEventListener("update", () => {
   // Get the player's position
-  const playerPos = new XYZ(PluginAPI.player.x, PluginAPI.player.y, PluginAPI.player.z);
+  const playerPos = new Vector3(PluginAPI.player.x, PluginAPI.player.y, PluginAPI.player.z);
   
   // Define the radius within which entities will be hit
   const hitRadius = 5;
@@ -13,7 +13,7 @@ PluginAPI.addEventListener("update", () => {
     }
     
     // Calculate the distance between the player and the entity
-    const entityPos = new XYZ(entity.posX, entity.posY, entity.posZ);
+    const entityPos = new Vector3(entity.posX, entity.posY, entity.posZ);
     const dx = playerPos.x - entityPos.x;
     const dy = playerPos.y - entityPos.y;
     const dz = playerPos.z - entityPos.z;
