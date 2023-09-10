@@ -12,6 +12,7 @@ window.addEventListener("keyup", (event) => {
 });
 PluginAPI.addEventListener("update", ()=>{
 if(!jetpackActive){
+PluginAPI.player.speedInAir = 0;
 return;
 }
 PluginAPI.player.motionY += 0.2;
