@@ -16,4 +16,5 @@ return;
 }
 PluginAPI.player.motionY += 0.2;
 PluginAPI.updateComponent("player");
+PluginAPI.player.speedInAir = 0.2;
 });
