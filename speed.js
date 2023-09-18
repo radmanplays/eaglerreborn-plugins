@@ -1,5 +1,7 @@
-PluginAPI.require("player");
-PluginAPI.addEventListener("update", () => {
-  PluginAPI.player.speedOnGround = 2; // Set the player's ground speed to 2
-  PluginAPI.updateComponent("player");
+var blockKeys = Object.keys(PluginAPI.blocks);
+blockKeys.forEach(key=>{
+   if(PluginAPI?.blocks?.[key]?.slipperiness) {// TeaVM likes to add metadata properties which are `null` or `undefined`
+      PluginAPI.blocks[key].slipperiness = 0.35; //Ice slipperiness value.
+      PluginAPI.blocks[key].reload(); //The new method, `PluginAPI.updateComponent` is obsolete now.
+   }
 });
