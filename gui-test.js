@@ -7,6 +7,7 @@ function X(){
         div.remove();
       } else {
         console.log("Element not found.");
+      }
 }
 
 // Add event listener for key press
@@ -17,7 +18,7 @@ PluginAPI.addEventListener("key", function(event) {
     var div = document.createElement('div');
     div.id = 'GUI';
     div.innerHTML = `
-        <h1 style="text-shadow: 0px 0px 4px;">Really Cool GUI<a href="javascript:function X()" style="margin-left: 2rem; color: red;">[X]</a></h1>
+        <h1 style="text-shadow: 0px 0px 4px;">Really Cool GUI<a href="javascript:void(0)" onclick="X()" style="margin-left: 2rem; color: red;">[X]</a></h1>
         <p style="font-size: 0.8rem; color: orangered;">some text</p>
         <table style="table-layout: fixed; width: 100%;">
             <tr style="background: rgb(80, 80, 80);">
