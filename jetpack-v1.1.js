@@ -15,5 +15,5 @@ if(!jetpackActive){
 return;
 }
 PluginAPI.player.motionY += 0.2;
-PluginAPI.updateComponent("player");
+PluginAPI.player.reload()
 });
