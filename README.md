@@ -1,6 +1,6 @@
 <html>
 
-<body class="stackedit">
+<body>
 
 <table>
 <thead>
@@ -10,7 +10,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/radmanplays/eaglerreborn-plugins/blob/main/packetlogger-v1.0.js">packetlogger</a></td>
+<td><a href="https://github.com/radmanplays/eaglerreborn-plugins/blob/main/packetlogger-v1.0.js">packetlogger-v1.0</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/radmanplays/eaglerreborn-plugins/blob/main/jetpack.js">jetpack</a></td>
