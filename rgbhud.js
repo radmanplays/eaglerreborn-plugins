@@ -66,7 +66,6 @@ function drawRainbowStringWithShadow(msg, x, y) {
 
     var rainbowColor = getRainbow(seconds, saturation, brightness);
 
-    // Draw the string with shadow using ModAPI
     ModAPI.drawStringWithShadow({msg: msg, x: x, y: y, color: rainbowColor});
 }
 
